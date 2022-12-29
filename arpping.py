@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-# arping : arpings a network and outputs table as a result
+# arpping : arppings a network and outputs table as a result
 
 
 import sys
@@ -35,7 +35,7 @@ if len(sys.argv) < 2:
         network = str(ipaddress.ip_network(f'{net}/{mask}')) # generates CIDR from Netmask and Mask
         networks.append(network)
         interfaces.append(line.split()[3])
-    console.print ("\nYou didn't add any prefix for Arping, I will do Arping for:", style="cyan")
+    console.print ("\nYou didn't add any prefix for Arpping, I will do Arpping for:", style="cyan")
     for network in networks:
         print (f'{network}')
 
